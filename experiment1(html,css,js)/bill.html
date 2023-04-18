@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>college fee Generator</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body bgcolor="skyblue">
+	<div class="container">
+		<h1>College fee Generator</h1>
+		<form id="order-form">
+			<label for="Tution fees">Tution fee:</label>
+			<select id="Fee" name="Fee">
+				<option value="0">None</option>
+				<option value="10000">4th year</option>
+				<option value="18000">3rd year</option>
+				<option value="25000">2nd year</option>
+				<option value="27000">1st year</option>
+			</select>
+
+			<label for="Transport">Transport:</label>
+			<select id="port" name="port">
+				<option value="0">None</option>
+				<option value="38000">vizianagaram</option>
+				<option value="45000">vizag</option>
+				<option value="43000">simachalam</option>
+				<option value="40000">Srikakulam</option>
+			</select>
+
+			<label for="hostel">Hostel</label>
+			<select id="host" name="host">
+				<option value="0">None</option>
+				<option value="80000">AC</option>
+				<option value="50000">NON-AC</option>
+			</select>
+
+
+			<center><button type="submit" id="submit-btn">Calculate Total</button></center>
+		</form>
+
+		<div id="total-container">
+			<p>Your total is: <span id="total"></span></p>
+		</div>
+	</div>
+
+	<script src="script1.js"></script>
+</body>
+</html>
+
+<script>
+const orderForm = document.getElementById('order-form');
+const fee = document.getElementById('Fee');
+const e = document.getElementById('port');
+const d = document.getElementById('host');
+const submitBtn = document.getElementById('submit-btn');
+const total = document.getElementById('total');
+
+function calculateTotal() {
+  const app = parseFloat(fee.value);
+  const entree= parseFloat(e.value);
+  const Price = parseFloat(d.value);
+
+  const totalPrice = app + entree + Price;
+  total.innerText = `${totalPrice.toFixed(2)}`;
+}
+
+orderForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+  calculateTotal();
+});
+
+fee.addEventListener('change', calculateTotal);
+e.addEventListener('change', calculateTotal);
+d.addEventListener('change', calculateTotal);
+
+</script>
+<style>
+
+.body{
+	background-color: rgb(179, 242, 252);
+}
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #21a4be;
+}
+
+h1 {
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+select {
+	margin-bottom: 20px;
+}
+
+button {
+	margin-top: 20px;
+	background-color: #1bc248;
+}
+
+#total-container {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#total {
+	font-weight: bold;
+}
+
+
+</style>

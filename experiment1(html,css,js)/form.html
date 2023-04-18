@@ -1,0 +1,73 @@
+<html>
+    <head><title><h1>registration form</h1></title>
+    <link rel="stylesheet" href="first.css">
+    <script >
+        function validateForm() {
+  let x = document.forms["reg"]["f11"].value;
+  let x11 = document.forms["reg"]["f31"].value;
+  let x1 = document.forms["reg"]["f111"].value;
+  if (x == "") {
+    alert(" first name isrequired");
+    return false;
+  }
+  else if (x1=="") {
+    alert(" lastt name isrequired");
+    return false;
+  }
+  else if (x11.length<6 || x11=="") {
+    alert("length of password must be greater than 6");
+    return false;
+  }
+  else{
+
+  }
+}
+    </script>
+    </head>
+    
+    <body id="k">
+        <div id="j">
+            <form name="reg"  onsubmit="validateForm()">
+               <center> <h1 id = " g">REGISTRATION FORM</h1></center>
+               <label> First Name :&nbsp;&nbsp;&nbsp;&nbsp;</label>
+               <input type="text" placeholder="Enter your name" id="f11"><br><br>
+               <label>  Last Name :&nbsp;&nbsp;&nbsp;&nbsp;</label>
+               <input type="text" placeholder="Enter your  name" id="f111"><br><br>
+               <label>Date Of Birth :&nbsp;&nbsp;</label><input type="date" required placeholder="Enter your dob" class="f1" ><br><br>
+               <label> Email address :</label>
+               <input type="email" placeholder="Enter your email" id="f221" ><br><br>
+                <label> password:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="password" placeholder="password" id="f31" ><br><br>
+                <label> Age :&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="Number"  placeholder="Enter your age" class="f1"><br><br>
+                <label>Mobile number :&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                <input type="tel" required="required" placeholder="Enter your mobile number" id="f41"><br><br>
+                <label>    Address:&nbsp;&nbsp; </label>
+                <textarea class="f1"></textarea><br><br>
+                <label>gender        :</label> male <input type="radio"  name="g" class="f1">
+                                female <input type="radio" name="g" class=""f1><br><br>
+               <label>language Known: </label><input type="checkbox" class="f1" >
+               telugu<input type="checkbox" id="f1">
+                hindi<input type="checkbox" id="f1">
+                english<br><br>
+               <label>linkedin :</label>
+               <input type="url" class="f1"><br><br>
+                <label>course applied for:</label>
+                <select>
+                    <option>WEB DEVELOPMENT</option>
+                    <option>PYTHON DEVELOPMENT</option>
+                    <option>OPERATING SYSTEM</option>
+                    <option>DATA STRUCTURE</option>
+                </select><br><br>
+                <label>photo:</label>
+                <input type="file" value=".jpg"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="submit" value="submit" class="f21">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset"  value="reset" class="f21">
+
+             </form>
+
+         </div>
+         
+    </body>
+
+</html>

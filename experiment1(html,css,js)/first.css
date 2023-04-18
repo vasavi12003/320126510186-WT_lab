@@ -1,0 +1,156 @@
+#o{
+    background:url(https://tse4.mm.bing.net/th?id=OIP.aMoV8UAw9rhITkMtv9dFTgHaEo&pid=Api&P=0);
+    background-position:400px 0px;
+}
+#o1{
+background:url(https://tse2.mm.bing.net/th?id=OIP.hD4H8ZzavYYb1-mlAQP0OwHaEo&pid=Api&P=0);
+border-radius: 50% ;}
+#d{
+    padding:0px;
+    cellpadding: 0px;
+}
+#f{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    font-size: 20;
+}
+#b{
+    background: url(https://tse3.mm.bing.net/th?id=OIP.6mSZzkLIfJfiXCKKQG_1bwHaEK&pid=Api&P=0);
+    padding-left:10px;
+   
+}
+#j{
+    width:500px;
+    margin:100px auto 10px auto;
+    background-color:rgb(223, 231, 197);
+
+}
+
+.f1:hover{
+    background-color:rgb(249, 194, 249);
+
+}
+.f21:hover{
+    background-color:rgb(251, 62, 97) ;
+}
+#k{
+    background:url(https://www.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-9-full.jpg);
+
+}
+form{
+    margin: 40px;
+}
+label{
+    font-size:18 px;
+    font-style:italic;
+}
+.f21{
+    width:80px;
+    padding:3px;
+    font-size:16px;
+    background-color:rgb(252, 126, 8);
+}
+#tab{
+    width:500px;
+    margin:100px auto 0px auto;
+    background-color:rgb(255, 240, 221);
+
+
+}
+#v{
+    height: 30vh;
+    display:flex;
+    align:left;
+}
+
+#gir{
+    width:120px;
+    border-radius: 50%;
+    border:10px solid #234c62;
+}
+#gi{
+    width:115px;
+    border-radius: 50%;
+    border:10px solid #234c62;
+}
+#gil{
+    width:120px;
+    border-radius: 50%;
+    border:10px solid #234c62;
+}
+#gil:hover{
+    border-color:rgb(244, 140, 5);
+}
+#gir:hover{
+    border-color:rgb(244, 140, 5);
+}
+#gi:hover{
+    border-color:rgb(244, 140, 5);
+}
+#e{
+    width:80px;
+    padding:3px;
+    font-size:16px;
+    background-color:rgb(238, 195, 154);
+
+}#s{
+    align:left;
+}
+#q{
+    text-size-adjust:20;
+
+}
+#z{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    min-height: 110;
+    background:#E3F2FD;
+}
+.game{
+    width:70vmin;
+    height:80vmin;
+    display:flex;
+    overflow: hidden;
+    flex-direction: column;
+    border-radius:5px;
+    background:#9fb3f0;
+}
+.det{
+    color:#cae5ef;
+    font-size: 1.2rem;
+    font-weight:200;
+    padding:20px 27px;
+    display: flex;
+    justify-content: space-between;
+
+}ul{
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-right:0px;
+}
+ul li {
+    background-color: rgb(71, 195, 220);
+    width: 150px;
+    height: 40px;
+    float:bottom;
+    border:3px solid rgb(24, 25, 62);
+    text-align: center;
+}
+ul li a{
+    color:#2e367f;
+    display: block;
+    text-decoration: none;
+}
+ul li a:hover{
+    background-color: aqua;
+}
+ul li ul li{
+    display:none;
+}
+ul li:hover ul li{
+    display: block;
+
+}

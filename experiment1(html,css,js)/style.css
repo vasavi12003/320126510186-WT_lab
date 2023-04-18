@@ -1,0 +1,32 @@
+
+body {
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color: rgb(173, 162, 170);
+
+}
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column ;
+    box-shadow: 3px 5px 10px rgba(0,0,0,0.5);
+    padding: 20px;
+   
+}h3 {
+    font-size: 30px;
+}
+input{
+    height: 25px;
+    font-size: 20px;
+}
+button {
+    background-color: #339963;
+    color: #fff;
+    font-size: 18px;
+}
+p {
+    font-weight: 400;
+}
