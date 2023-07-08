@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            form{
+               
+                display:inline;
+            }
+            body {
+                background-color: #f2f2f2;
+                font-family: Arial, sans-serif;
+            }
+            button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            h1 {
+                color: #44a948;
+            }
+            .dg{
+                position:fixed;
+                top: 10px; right: 10px;
+            }
+        </style>
+        <form class="dg" action="carts"> 
+            <button type="submit">View cart</button>
+        </form>
+        <form action="/fashion" method="POST">
+            <button type="submit">Fashion</button>
+        </form>
+        <form action="/beauty" method="POST">
+            <button type="submit">Beauty</button>
+        </form>
+        <form action="/gadgets" method="POST">
+            <button type="submit">Gadgets</button>
+        </form>
+        <form action="/furniture" method="POST">
+            <button type="submit">Furniture</button>
+        </form>
+    </head>
+    <body>
+        <h1>Welcome {{ session['user']}}</h1>
+        
+    </body>
+</html>
