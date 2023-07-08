@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Homepage</title>
+    <style>
+	body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f00;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 24px;
+    width: auto;
+}
+
+.search-bar input {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 3px 0 0 3px;
+    border: none;
+}
+
+.search-bar button {
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border: none;
+    border-radius: 0 3px 3px 0;
+}
+
+.search-bar img {
+    height: 20px;
+    width: auto;
+}
+
+main {
+    padding: 20px;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.video img {
+    width: 100%;
+    height: auto;
+}
+
+.video h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.video p {
+    color: #888;
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="youtube_logo.png" alt="YouTube Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button type="submit"><img src="search_icon.png" alt="Search Icon"></button>
+        </div>
+    </header>
+    <main>
+        <section class="videos">
+            <div class="video">
+                <img src="video_thumbnail1.jpg" alt="Video Thumbnail">
+                <h3>Video Title 1</h3>
+                <p>Channel Name 1</p>
+            </div>
+            <div class="video">
+                <img src="video_thumbnail2.jpg" alt="Video Thumbnail">
+                <h3>Video Title 2</h3>
+                <p>Channel Name 2</p>
+            </div>
+            <!-- Add more video elements as needed -->
+        </section>
+    </main>
+</body>
+</html>

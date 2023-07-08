@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Details</title>
+<style>
+    body{
+        background-color: antiquewhite;
+        padding-top:15px;
+        font-size:20px;
+    }
+    #table{
+        border:3px solid black;
+    }
+    td,th{
+        text-align:center;
+        border:2px solid black;
+    }
+    td:hover,th:hover{
+        background-color: aquamarine;
+    }
+</style>
+</head>
+<center><body>
+    <h1>Registration Details</h1>
+    <table id="table">
+    <tr>
+    <th>COLUMN-NAME</th>
+    <th>DETAILS</th>
+    </tr>
+    <tr>
+    <td>NAME</td>
+    <td><%= name %></td>
+    </tr>
+    <tr>
+    <td>EMAIL</td>
+    <td><%= email %></td>
+    </tr>
+    <tr>
+    <td>PASSWORD</td> 
+    <td><%= password %></td>
+    </tr>
+    <tr>
+    <td>PHONE</td>
+    <td><%= phone %></td>
+    </tr>
+    <tr>
+    <td>GENDER</td>
+    <td><%= gender %></td>
+    </tr>
+    </table>
+</body></center>
+</html>

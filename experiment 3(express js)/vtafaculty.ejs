@@ -1,0 +1,85 @@
+<html>
+<head>
+<style>
+*{
+    margin:0;
+    padding:0;
+}
+#menu{
+width:100%;
+height:15%;
+background-color:black;
+}
+button{
+    margin-top:10px;
+    font-size:20px ;
+    padding-left:5px;
+    padding-top:5px;
+    background-color:black;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+button:hover{
+background-color:grey;
+}
+#footer{
+    width:100%;
+    height:12%;
+    background-color:black;
+}
+#middle{
+    background-color:white;
+    width:100%;
+    height:70%;
+    font-size:20px;
+}
+p{
+    font-size: 20px;
+    text-align:center;
+    font-weight:bold;
+    padding:50px;
+    padding-top:135px;
+}
+select{
+    border-radius:10px;
+    background-color: rgb(243, 237, 237);
+    width:100px;
+    height:35px;
+}
+select:hover{
+    background-color: white;
+}
+#but{
+    border-radius: 10px;
+    height:30px;
+    background-color: black;
+    color:white;
+}
+form{
+    padding-top:150px;
+}
+</style>
+</head>
+<body>
+<div id="menu">
+<button onclick="location.href='/index.html'">HOME</button>&nbsp &nbsp &nbsp &nbsp &nbsp
+<button onclick="location.href='/register'">REGISTER</button>&nbsp &nbsp &nbsp &nbsp &nbsp
+<button onclick="location.href='/login'">LOGIN</button>&nbsp &nbsp &nbsp &nbsp &nbsp
+<button onclick="location.href='/logout'">LOGOUT</button>&nbsp &nbsp &nbsp &nbsp &nbsp
+</div>
+<div id="middle">
+    <center><form action="/viewt" method="post" name="form">
+        <label for="sec"><b>SECTION&nbsp &nbsp</b></label>
+        <select id="sec" name="sec"><option value="cse_a">CSE A</option>
+            <option value="cse_b">CSE B</option>
+            <option value="cse_c">CSE C</option></select><br><br>
+            <input id="but" type="submit">
+    </form></center>
+</div>
+</body>
+<footer>
+    <div id="footer">
+    </div>
+</footer>
+</html>

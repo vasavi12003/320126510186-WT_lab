@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table {
+                border:2px solid black;
+                border-collapse: collapse;
+                width: 100%;
+            }
+            
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: center;
+            }
+            
+            th {
+                background-color: #dddddd;
+            }
+            
+            h1 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>All faculty members</h1>
+        <p><strong>DATE:&nbsp&nbsp<%= extraData %></strong></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Faculty name</th>
+                    <th>8:40-9:30</th>
+                    <th>9:30-10:20</th>
+                    <th>10:20-11:10</th>
+                    <th>11:10-12:00</th>
+                    <th>12:50-1:40</th>
+                    <th>1:40-2:30</th>
+                    <th>2:30-3:20</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <% const facultyDict = {}; %>
+                <% for (let i = 0; i < schedule.length; i++) { %>
+                    <tr>
+                        <% if (!(schedule[i].name in facultyDict)) { %>
+                            <td><%= schedule[i].name %></td>
+                            <% facultyDict[schedule[i].name] = {}; %>
+                            <% for (let j = i; j < schedule.length; j++) { %>
+                                <% if (schedule[j].name == schedule[i].name) { %>
+                                    <% const hr = schedule[j].hr;
+                                       const subject = schedule[j].sub;
+                                       const sec=schedule[j].sec;
+                                       facultyDict[schedule[i].name][hr] = subject+" "+sec; %>
+                                <% } %>
+                            <% } %>
+                            <td><%= facultyDict[schedule[i].name]['1st'] || '-' %></td>
+                            <td><%= facultyDict[schedule[i].name]['2nd'] || '-' %></td>
+                            <td><%= facultyDict[schedule[i].name]['3rd'] || '-' %></td>
+                            <td><%= facultyDict[schedule[i].name]['4th'] || '-' %></td>
+                            <td><%= facultyDict[schedule[i].name]['6th'] || '-' %></td>
+                            <td><%= facultyDict[schedule[i].name]['7th'] || '-' %></td>
+                            <td><%= facultyDict[schedule[i].name]['8th'] || '-' %></td>
+                        <% } %>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </body>
+</html>
